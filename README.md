@@ -92,7 +92,7 @@ def main():
             f.write(user_input + '\n')
 
         print(f"{user_input} added to {filename}")
-
+```
 if __name__ == "__main__":
     main()
-
+```

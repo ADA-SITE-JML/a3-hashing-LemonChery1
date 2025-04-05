@@ -87,7 +87,7 @@ def main():
         bucket_number = (hash_value % n) + 1  # +1 so buckets are 1-indexed
         filename = f"{bucket_number}.txt"
 
-        # Assigning to appropriate bucket file to write
+        # Writing to appropriate bucket file
         with open(filename, 'a') as f:
             f.write(user_input + '\n')
 

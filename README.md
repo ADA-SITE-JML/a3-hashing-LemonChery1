@@ -2,7 +2,7 @@
 ## Option A
 
 **A hash bucket system using a fast hashing algorithm.** 
-This is the third assignment of this course (`A3`) designed to check the hashing and file storage skills attained.
+This is the third assignment of this course (`A3`) designed to check the hashing and file storage skills attained. Here is the implementation of option A of this assignment using Python.
 
 ## Objective
 
@@ -92,7 +92,7 @@ def main():
             f.write(user_input + '\n')
 
         print(f"{user_input} added to {filename}")
-```
+
 if __name__ == "__main__":
     main()
 ```

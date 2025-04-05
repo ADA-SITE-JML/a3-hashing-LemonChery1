@@ -59,7 +59,7 @@ if __name__ == "__main__":
   Now, I introduce hashing using xxhash and assign each input to a specific bucket file (like 1.txt, 2.txt, ... n.txt).
 
 ### **Code after adding hashing and file storage**
-``
+```
 import sys
 import xxhash
 
@@ -94,5 +94,5 @@ def main():
         print(f"{user_input} added to {filename}")
 
 if __name__ == "__main__":
-    main()``
-
+    main()
+```

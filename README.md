@@ -93,6 +93,6 @@ def main():
 
         print(f"{user_input} added to {filename}")
 
-if __name__ == "__main__":
+if `__name__` == "`__main__`":
     main()
 ```

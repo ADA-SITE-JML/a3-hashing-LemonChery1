@@ -13,7 +13,7 @@ This project uses an application called `hash_app` which:
 - Allows collisions (multiple values per file)
 - Accepts user input in a loop until manually stopped (by CTRL^C)
 
-  ## Getting Started
+  ## 1. Getting Started
 
   ### Prerequisites
 

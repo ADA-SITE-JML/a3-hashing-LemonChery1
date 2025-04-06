@@ -51,8 +51,8 @@ def main():
 
     print(f"Hashing into {n} buckets. Bucket size limit: {s} (not obligated)")
 
-if __name__ == "__main__":
-    main()
+    if __name__ == "__main__":
+      main()
 
 ### 2. Integrating hashing and adding file storage
 
@@ -96,7 +96,7 @@ def main():
     if __name__ == "__main__":
         main()
 
-
+```
 ### 3. Interactive Input Loop & Exit Handling
 
 Finally, I add a continuous user input loop, exit with CTRL^C, hash-based bucket allocation using xxhash. 

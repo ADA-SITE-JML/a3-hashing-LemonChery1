@@ -141,3 +141,12 @@ Furthermore, it will write to 1.txt to n.txt depending on the hash result. As a 
 
     if __name__ == "__main__":
       main()
+```
+## How to Run
+
+Since the code is in Python, make sure you have Python 3.6+ installed.
+You’ll also need the xxhash module, which was intructed in previous parts. Then, after compiling the code, you can run this following command:
+```
+python hash_app.py 5 20
+```
+The numbers given are optional, you can run the command with different numbers, and experiment for yourself. :)

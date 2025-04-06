@@ -33,7 +33,7 @@ In this stage, I will add **command-line argument handling** to accept two param
 - `n` (number of hash buckets)
 - `s` (bucket size, unused for now, might be useful for Option B later)
 
-### **Code after the 1st Set-up**
+#### **Code after the 1st Set-up**
 ```
 import sys
 
@@ -58,7 +58,7 @@ def main():
 
   Now, I introduce hashing using xxhash and assign each input to a specific bucket file (like 1.txt, 2.txt, ... n.txt).
 
-### **Code after adding hashing and file storage**
+#### **Code after adding hashing and file storage**
 ```
 import sys
 import xxhash
@@ -101,7 +101,7 @@ def main():
 
 Finally, I add a continuous user input loop, exit with CTRL^C, hash-based bucket allocation using xxhash. 
 Furthermore, it will write to 1.txt to n.txt depending on the hash result. As a result, implementing the exit handling and interactive input loop will grant us the completed version of my code.
-### **Final version of the code**
+#### **Final version of the code**
 ```
  import sys
  import xxhash

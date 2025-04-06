@@ -13,7 +13,7 @@ This project uses an application called `hash_app` which:
 - Allows collisions (multiple values per file)
 - Accepts user input in a loop until manually stopped (by CTRL^C)
 
-  ## 1. Getting Started
+  ## Getting Started
 
   ### Prerequisites
 
@@ -26,7 +26,7 @@ This project uses an application called `hash_app` which:
 
 ```
 pip install xxhash
-
+```
 ### 1. Setting up
 
 In this stage, I will add **command-line argument handling** to accept two parameters which are:

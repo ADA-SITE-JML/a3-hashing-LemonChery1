@@ -34,7 +34,7 @@ In this stage, I will add **command-line argument handling** to accept two param
 - `s` (bucket size, unused for now, might be useful for Option B later)
 
 ### **Code after the 1st Set-up**
-```python
+```
 import sys
 
 def main():
@@ -96,3 +96,47 @@ def main():
     if __name__ == "__main__":
         main()
 
+
+### 3. Interactive Input Loop & Exit Handling
+
+Finally, I add a continuous user input loop, exit with CTRL^C, hash-based bucket allocation using xxhash. 
+Furthermore, it will write to 1.txt to n.txt depending on the hash result. As a result, implementing the exit handling and interactive input loop will grant us the completed version of my code.
+```
+import sys
+import xxhash
+
+def main():
+    if len(sys.argv) != 3:
+        print("Usage: python hash_app.py <num_buckets> <bucket_size>")
+        return
+
+    try:
+        n = int(sys.argv[1])
+        s = int(sys.argv[2])
+    except ValueError:
+        print("Both arguments must be integers.")
+        return
+
+    print(f"Hashing into {n} buckets. Bucket size limit: {s} (not enforced in this version)")
+
+    try:
+        while True:
+            user_input = input("Please enter the string: ").strip()
+            if user_input == "":
+                continue
+
+            # Hashing using xxhash and determining the bucket
+            hash_value = xxhash.xxh32(user_input).intdigest()
+            bucket_number = (hash_value % n) + 1  # +1 so buckets are 1-indexed
+            filename = f"{bucket_number}.txt"
+
+            #  Writing to appropriate bucket file
+            with open(filename, 'a') as f:
+                f.write(user_input + '\n')
+
+            print(f"{user_input} added to {filename}")
+    except KeyboardInterrupt:
+        print("\nExiting...")
+
+    if __name__ == "__main__":
+      main()

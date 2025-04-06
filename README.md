@@ -99,8 +99,9 @@ def main():
 ```
 ### 3. Interactive Input Loop & Exit Handling
 
-Finally, I add a continuous user input loop, exit with CTRL^C, hash-based bucket allocation using xxhash. 
+Finally, I add a continuous user input loop, exit with __CTRL^C__, hash-based bucket allocation using __xxHash__. 
 Furthermore, it will write to 1.txt to n.txt depending on the hash result. As a result, implementing the exit handling and interactive input loop will grant us the completed version of my code.
+
 #### **Final version of the code**
 ```
  import sys

@@ -17,7 +17,7 @@ This project uses an application called `hash_app` which:
 
   ### Prerequisites
 
-  Prerequisites before starting the code include:
+Prerequisites before starting the code include:
 
 - Python 3.7 or above
 - The `xxhash` library installation
